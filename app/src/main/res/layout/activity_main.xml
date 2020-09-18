@@ -1,18 +1,349 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow
+        android:paddingTop="10px"
+        android:gravity="center"
+        android:layout_marginTop="20px">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="My To Do List"
+            android:textColor="#890000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Today"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dip"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Lari Pagi"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="4:45 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Bersih bersih"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="6:15 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Bersepeda"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="6:30 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Memandikan burung"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="9:30 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Kirim undangan"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="12:45 PM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Servis Motor"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="2:00 PM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Tahlilan"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="6:15 PM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Mengembalikan sound"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="8:15 PM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Tomorrow"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dip"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Lari Pagi"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="4:45 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Bersih bersih"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="6:15 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Memandikan burung"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="9:30 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Potong rambut"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="10:15 AM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="5dip" >
+
+        <CheckBox android:text="Beli LPG"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"></CheckBox>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:text="12:00 PM"
+            android:textSize="17dip"
+            android:gravity="right">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginTop="20dip" >
+
+        <Button
+            android:text="Submit"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save" android:layout_span="2" ></Button>
+    </TableRow>
+
+</TableLayout>
