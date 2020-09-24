@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="10dp"
     android:paddingHorizontal="10dp"
@@ -10,13 +10,9 @@
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Add a New Task"
-        android:textSize="30sp" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:text="@string/create_task"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -24,7 +20,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:text="@string/name"
+            android:layout_below="@id/header"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/editTextTextMultiLine3"
@@ -33,7 +31,9 @@
             android:layout_below="@id/editTextTextPersonName2"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:text="@string/desc"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/editTextDate"
@@ -44,7 +44,10 @@
             android:layout_below="@id/editTextTextMultiLine3"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@id/editTextTime"
-            />
+            android:text="@string/date"
+            android:layout_toStartOf="@id/editTextTime"
+            android:layout_alignParentStart="true"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/editTextTime"
@@ -54,16 +57,27 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="0dp"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="time"
+            android:text="@string/time"
+            android:layout_alignParentEnd="true"
+            android:autofillHints="@string/time" />
 
         <Button
-            android:id="@+id/addTaskBtn"
+            android:id="@+id/editTaskBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
             android:text="@string/add"
             android:layout_below="@id/editTextTime"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
+            android:layout_toLeftOf="@id/deleteTaskBtn"
+            android:layout_toStartOf="@id/deleteTaskBtn" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/deleteTaskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_below="@id/editTextTime"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

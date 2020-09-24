@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
     android:padding="10dp"
     >
 
@@ -12,23 +11,23 @@
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="My Task List"
-        android:textSize="30sp" />
+        android:text="@string/task_list"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
 
-    <ListView
-        android:id="@+id/listTask"
-        android:layout_width="409dp"
-        android:layout_height="624dp" />
+        <ListView
+            android:id="@+id/listTask"
+            android:layout_width="match_parent"
+            android:layout_height="587dp"
+            android:layout_below="@id/header"/>
 
 
-    <Button
-        android:id="@+id/addTaskBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add"
-        android:layout_gravity="right"
-
-        />
-
-</LinearLayout>
+        <Button
+            android:id="@+id/createTaskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_task"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+</RelativeLayout>
