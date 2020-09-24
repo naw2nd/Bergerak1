@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+        >
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My Task"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine3"
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            android:layout_below="@id/editTextTextPersonName2"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:layout_below="@id/editTextTextMultiLine3"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/editTextTime"
+            />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTextMultiLine3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/editTaskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Save"
+            android:layout_below="@id/editTextTime"
+            android:layout_toLeftOf="@id/deleteTaskBtn"/>
+
+        <Button
+            android:id="@+id/deleteTaskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Cancel"
+            android:layout_below="@id/editTextTime"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
