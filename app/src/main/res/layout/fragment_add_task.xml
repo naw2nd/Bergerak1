@@ -6,22 +6,13 @@
     android:paddingHorizontal="10dp"
     >
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/create_task"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"/>
-
-        <EditText
+    <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/name"
-            android:layout_below="@id/header"
             android:autofillHints="" />
 
         <EditText
@@ -68,11 +59,11 @@
             android:layout_height="wrap_content"
             android:text="@string/add"
             android:layout_below="@id/editTextTime"
-            android:layout_toLeftOf="@id/deleteTaskBtn"
-            android:layout_toStartOf="@id/deleteTaskBtn" />
+            android:layout_toLeftOf="@id/cancelTaskBtn"
+            android:layout_toStartOf="@id/cancelTaskBtn" />
 
         <Button
-            android:id="@+id/deleteTaskBtn"
+            android:id="@+id/cancelTaskBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cancel"
